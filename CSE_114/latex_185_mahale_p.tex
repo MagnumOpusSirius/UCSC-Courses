@@ -1,0 +1,412 @@
+%% latex_185_moulds_g.tex
+%%
+%% The following file is a skeleton file that demonstrates how to implement the IEEEtran.cls class 
+%% file in LaTeX. This file is intended for the CMPE185 Technical Writing for Engineers Course in 
+%% which the students must write a tutorial aimed towards novice LaTeX users in the LaTex environment.
+%%
+%% This file is heavily adapted from Michael Shell's bare_adv.tex file made available at 
+%% http://www.ieee.org/conferences_events/conferences/publishing/templates.html
+%%
+%% You will need to rename this file with your information in the following format:
+%% latex_185_last name_ first initial.tex
+%% ---------------------------------------------------------------------------------------------------
+
+% \documentclass{} precedes the preamble and is typically the first command in any .tex document. Every .tex document should include this command as it defines what kind of document you intend on creating. Modifiers in square brackets [] can be added in between the text ''documentclass'' and the curly brackets {} to modify font size, templates, etc. 
+
+\documentclass[12pt,journal,compsoc]{IEEEtran}
+
+%-----PACKAGES-------------------------------------------------------------------------------------
+
+% Packages include extra commands that allow for additional formatting, ranging from Graphics, Math, to Alignment. The command to include packages will always look similar to \usepackage{} where the package name is within the curly brackets {}. Packages are defined in the preamble, i.e., between the \documentclass{} and \begin{document} commands.
+
+% The following link takes you to a list of additional packages that may not be listed here. http://en.wikibooks.org/wiki/LaTeX/Package_Reference
+
+% TO INCLUDE PACKAGES: 
+% - Open the file ''latex_sample_packages.tex'' from the .zip folder.
+% - From this file, COPY the code for the package you want to include and PASTE into your own .tex file.
+% - Uncomment the package you want to include and load, i.e., remove the ''%'' in front of the \usepackage{package_name}.
+ 
+
+% Copy package text here:
+
+\usepackage{graphicx}
+% This is an example of how a \usepackage{} command should be included. You will need to include more packages to complete this assignment.
+
+
+
+
+%----- The DOCUMENT Environment-------------------------------------------------------------------
+
+% The \begin{document} and \end{document} commands establish the environment for the text of the document. The \begin{} and \end{} commands are used repeatedly in LaTeX to show where an environment begins and ends. The \end{document} command will be the last line of this .tex file.
+
+\begin{document}
+
+% The following commands are self explanatory. Insert your title, author and date into each command's curly bracket. You can include the abstract, paper header and paper footer information in this section then conclude the section with the command \maketitle (shown as the last line at the end of this section).
+
+\title{\LaTeX\  Tutorial}
+\author{\\
+		Parth~Mahale}
+% The double backslash \\ is used here to enter a ''Carriage Return'', or a line break. Note that the tilde ~ in between my name used as a ''Nonbreaking Space''. LaTeX will not break a structure at a ~ so this keeps an author's name from being broken across two lines. Also note that I included my name as an example so make sure to only insert your name in this command.
+
+\date{}		% leaving the brackets empty omits the date
+% To input the current date, you can type: \date{\today}
+
+% The paper headers
+\markboth{\LaTeX\ IEEE Template Tutorial}%
+{Moulds \MakeLowercase{\textit{et al.}}: CMPE185}
+% The only time the second header will appear is for the odd numbered pages
+% after the title page when using the twoside option.
+% 
+% *** Note that you probably will NOT want to include the author's ***
+% *** name in the headers of peer review papers.                   ***
+% You can use \ifCLASSOPTIONpeerreview for conditional compilation here if
+% you desire.
+
+% The publisher's ID mark at the bottom of the page is less important with
+% Computer Society journal papers as those publications place the marks
+% outside of the main text columns and, therefore, unlike regular IEEE
+% journals, the available text space is not reduced by their presence.
+% If you want to put a publisher's ID mark on the page you can do it like
+% this:
+\IEEEpubid{0000--0000/00\$00.00~\copyright~2007 IEEE}
+% or like this to get the Computer Society new two part style.
+%\IEEEpubid{\makebox[\columnwidth]{\hfill 0000--0000/00/\$00.00~\copyright~2007 IEEE}%
+%\hspace{\columnsep}\makebox[\columnwidth]{Published by the IEEE Computer Society\hfill}}
+% Remember, if you use this you must call \IEEEpubidadjcol in the second
+% column for its text to clear the IEEEpubid mark (Computer Society jorunal
+% papers don't need this extra clearance.)
+
+
+% use for special paper notices
+%\IEEEspecialpapernotice{(Invited Paper)}
+
+% for Computer Society papers, we must declare the abstract and 
+% PRIOR to the title within the \IEEEcompsoctitleabstractindextext IEEEtran
+% command as these need to go into the title area created by \maketitle.
+
+\maketitle
+
+%----- The SECTION Environment -------------------------------------------------------------------
+
+% To create a section, simply type the command \section{} with the name of your section name inserted into the curly brackets {}. The section's body text follows underneath the \section{} command. 
+
+\section{Introduction}
+% Computer Society journal papers do something a tad strange with the very
+% first section heading (almost always called "Introduction"). They place it
+% ABOVE the main text! IEEEtran.cls currently does not do this for you.
+% However, You can achieve this effect by making LaTeX jump through some
+% hoops via something like:
+%
+%\ifCLASSOPTIONcompsoc
+%  \noindent\raisebox{2\baselineskip}[0pt][0pt]%
+%  {\parbox{\columnwidth}{\section{Introduction}\label{sec:introduction}%
+%  \global\everypar=\everypar}}%
+%  \vspace{-1\baselineskip}\vspace{-\parskip}\par
+%\else
+%  \section{Introduction}\label{sec:introduction}\par
+%\fi
+%
+% Admittedly, this is a hack and may well be fragile, but seems to do the
+% trick for me. Note the need to keep any \label that may be used right
+% after \section in the above as the hack puts \section within a raised box.
+
+
+
+% The very first letter is a 2 line initial drop letter followed
+% by the rest of the first word in caps (small caps for compsoc).
+% 
+% form to use if the first word consists of a single letter:
+% \IEEEPARstart{A}{demo} file is ....
+% 
+% form to use if you need the single drop letter followed by
+% normal text (unknown if ever used by IEEE):
+% \IEEEPARstart{A}{}demo file is ....
+% 
+% Some journals put the first two words in caps:
+% \IEEEPARstart{T}{his demo} file is ....
+% 
+% Here we have the typical use of a "T" for an initial drop letter
+% and "HIS" in caps to complete the first word.
+
+\IEEEPARstart{T}{his} 
+% You must have at least 2 lines in the paragraph with the drop letter
+% (should never be an issue)
+tutorial will brief you on the rudiments of \LaTeX\ employed primarily by technical writers. \LaTeX\ is an essential tool for writing documents wherein you can employ professional-quality type setting using symbols and standard notations. Math or science content are usually preferred to be written in this format and serves to communicate to many scholarly communities. The file extension of \LaTeX\ is .tex and can compile through online editor like overleaf. 
+ 
+\section{How to Start a .Tex File?}
+Opening a .tex file can seem daunting at first sight but couple of tips to keep in mind are preambling a document. Preamble means to document all the information before you start writing and it starts with the command \\documentclass{}.
+For example: this tutorial uses IEEE standard parameters (12pt, journal, compsoc).
+
+\subsection{Packages}
+To import any packages in your document, we have to look back at our preamble.
+We can use the following command: \textbackslash usepackage \{package\_name\}
+Packages like amsmath are already built-in and any additional packages will need to be installed in order to compile. These packages are meant to provide additional features or options like changing the layout of the document.
+
+\section{Title and Heading Information}
+\subsection{Title, Author, and Date}
+Initially when we read any document, the first thing we have to look out for is who has written the paper, the title and date written.
+\\If we want to add the title: \textbackslash title\{title of paper\}. \\The author will be formatted like this: \textbackslash author\{author's name\}. 
+\\The date can be added with: \textbackslash date\{\} this will remove the date unless we pass it a value like this: \textbackslash today.
+
+\subsection{Maketitle}
+Upon retrieving all information about the author, date or title we can implement certain things differently. Author and date and can be written with the command: \textbackslash maketitle which will format the title and be on top of document.
+
+\section{Environments}
+
+If you want to format a specific section of any document, environments allow you to apply type setting effects. This way you can format any piece of information. The commands are as follows:
+
+\begin{verbatim} \begin{} \end{verbatim} and
+\begin{verbatim} \end{} \end{verbatim}
+And within these tags, one can format the text.
+
+
+\section{Reserved Characters}
+\LaTeX\ has some reserved or special characters like: \begin{verbatim} % ! @ # { }\end{verbatim} An easy way to print these characters is to put a backslash in front of the characters.
+A brief overview of how to use reserved characters:
+\begin{table}[h]
+%% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+%\extrarowheight as needed to properly center the text within the cells
+\caption{Special Characters}
+\label{table_example}
+\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+\begin{tabular}{|l||r|}
+\hline
+\& & \textbackslash \& \\
+\hline
+\# & \textbackslash \# \\
+\hline
+\$ & \textbackslash \$ \\
+\hline
+\% & \textbackslash \% \\
+\hline
+\{ & \textbackslash \{ \\
+\hline
+\} & \textbackslash \} \\
+\hline
+\~{} & \textbackslash \~{}\{\} \\
+\hline
+\^{} & \textbackslash \^{}\{\} \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Understanding Reserve Characters}
+For example the benefit of tilde or \~{} stands for protected space and use it when you want to leave a space that is unbreakable.
+\\ The purpose of \_ underscore is to showcase any subscripts and \^{} for any superscripts. 
+\\ By typing \$$\backslash$backslash\$, this outputs into an actual backslash: $\backslash$
+\\ The double backward slash is used to create a line break and we cannot use this to display the backslash.
+To sum it up, these characters are used to break out of the normal conventions and actually using them on Latex can be tedious. But knowing these commands as shown in Table 1 will display the characters on the left.
+% Creating a subsection is similar to creating a section and is used with the command \subsection{}.
+
+
+% needed in second column of first page if using \IEEEpubid
+%\IEEEpubidadjcol
+
+% Creating a sub subsection:
+
+
+
+%----- Additional Features -----------------------------------------------------------------------
+
+\section{Additional Features}
+
+\subsection{Figures}
+% FIGURES:
+
+% Note the FIGURE Environment created by the \begin{figure} and \end{figure} commands.
+
+\begin{figure}[h] 	% There are several different modifiers that can be used in [].
+\centering
+\includegraphics[width=1.5in]{slug.pdf}
+\caption{Sammy the Slug}
+\label{fig_slug}
+\end{figure}
+
+% You will need to use appropriate file types for figures and will also need to include that image file in the same folder as your .tex file. 
+
+%-------------------------------------------------------------------------------------------------
+\subsection{Label, Cite, and Ref Commands}
+The label and ref commands are used for references. When you use a figure in your LaTeX document you can use the label command within the figure environment to give it a friendly name eg. \textbackslash label\{figure\_name\}. When you do this it makes it so that you can reference the figure later in the document using the ref command as so: \textbackslash ref\{figure\_name\}. This writes the number of the figure.
+\begin{verbatim} \label{fig_slug} \end{verbatim} as it appears in the figure environment\\
+\begin{verbatim} \cite{IEEEhowto:kopka} \end{verbatim} appears like: \cite{IEEEhowto:kopka}\\
+\begin{verbatim} \ref{fig_slug} \end{verbatim} appears like: \ref{fig_slug}\\
+
+% IMPORTANT NOTE: In order to assign the correct reference number to each label, you may have to compile your code twice. 
+
+%-------------------------------------------------------------------------------------------------
+
+\subsection{Tables}
+An example of a floating table.
+For us to make a table we need to use the command: \textbackslash begin\{table\}{[}{]}  followed by \textbackslash centering. Then you need to write \textbackslash begin \{tabular\}\{|c|c|\}. It creates a tabular environment. The vertical bars are meant to separate the columns in a row. Upon which we can start entering data in the table. After completing a row we can end it like this : \textbackslash \textbackslash and on the next line write \textbackslash hline. This will make a horizontal line to separate the rows.  End the table with \textbackslash end\{table\}
+% An example of a floating table. Note that, for IEEE style tables, the 
+% \caption command should come BEFORE the table. Table text will default to
+% \footnotesize as IEEE normally uses this smaller font for tables.
+% The \label must come after \caption as always.
+%
+\begin{table}[h]
+%% increase table row spacing, adjust to taste
+\renewcommand{\arraystretch}{1.3}
+% if using array.sty, it might be a good idea to tweak the value of
+%\extrarowheight as needed to properly center the text within the cells
+\caption{An Example of a Table}
+\label{table_example}
+\centering
+%% Some packages, such as MDW tools, offer better commands for making tables
+%% than the plain LaTeX2e tabular which is used here.
+\begin{tabular}{|c||c|}
+\hline
+One & Two\\
+\hline
+Three & Four\\
+\hline
+\end{tabular}
+\end{table}
+
+\section{Math Formulas}
+A lot of people get curious on how to implement math or science formulas in Latex. If you want to display a basic equation like $a^2+b^2=c^2$ we can write it suing two dollar signs acting as tags. Within these tags will be where our equations go.
+
+\subsection{Implementing Formula}
+There are journals that portray equations separate from the actual text. In order to do that we can use the command \$\$ command after which we can type the formula and close the tags with \$\$. 
+Like the formula for a*b can be written like:
+\begin{verbatim}
+    $$a*b$$
+\end{verbatim}
+
+\subsection{Fractions}
+Writing a fraction command we use the frac command. For example $\frac{a}{b}$ is written as \$\textbackslash frac\{a\}\{b\}\$
+
+\subsection{Symbols}
+Writing a math symbol can be daunting and for that we can look at the below example: $\gamma \oplus \alpha$ is written as \$\textbackslash gamma \textbackslash oplus \textbackslash alpha\$. Overleaf has many functionality like this to explore various other symbols that one can include in the document.
+
+
+\subsection{Superscripts and Subscripts}
+If we want to write superscripts or subscripts within a math environment we use the \^{} and \_ symbols. For example: $A^3_4$ is written as \$A\^{}3\_4\$
+
+
+\section{Plotting Figures}
+In order to plot a figure or chart we need to establish an environment through the following command:
+\\ \textbackslash begin\{figure\}{[}h{]} 
+\\ and 
+\\ \textbackslash end\{figure\} 
+\\ In order to place your figure/chart in the center we have to use the \textbackslash which will basically center our image. Upon which we have to identify the filename (which has to be in the same folder as our .tex file)and use the following command:
+\\ \textbackslash includegraphics {[}width=Xin{]}\{filename.png\} 
+\\ After this make sure to add a caption text for that figure providing small information on that chart or image. \textbackslash caption\{caption text here\} 
+\\ Implementing this will allow to be able to see your figure in the document. Following is an example of this pH vs Volume of Base chart that I created using Google sheet by plotting data first. Then I copied that chart and uploaded it in the form of .png in the same folder as my latex file so that it remains in the same environment:
+
+\begin{figure}[h]
+\centering
+\includegraphics
+[width=3in]{chart.png}
+\caption
+{Titration curve will show the pH vs the volume of NaOH. These visuals reflect on a sharp rise in pH. }
+\end{figure}
+
+As a small tutorial on implementing the above visual, below is a small code written in Latex for this image :
+
+\begin{verbatim}
+    \begin{figure}[h]
+    \centering
+    \includegraphics
+    [width=3in]{chart.png}
+    \caption
+    {Titration curve will show the pH vs the volume of NaOH. These visuals reflect on a sharp rise in pH. }
+    \end{figure}
+\end{verbatim}
+% Note that IEEE does not put floats in the very first column - or typically
+% anywhere on the first page for that matter. Also, in-text middle ("here")
+% positioning is not used. Most IEEE journals use top floats exclusively.
+% However, Computer Society journals sometimes do use bottom floats - bear
+% this in mind when choosing appropriate optional arguments for the
+% figure/table environments.
+% Note that, LaTeX2e, unlike IEEE journals, places footnotes above bottom
+% floats. This can be corrected via the \fnbelowfloat command of the
+% stfloats package.
+
+\section{Document Reference}
+To write your references you should know a few commands such as \textbackslash label \textbackslash ref, and \textbackslash cite as well as thebilbliography environment.
+
+\subsection{How to Cite?}
+You can cite an entry by passing its name as the parameter to \textbackslash cite\{name\}. The number of the bibliography entry will then appear in square brackets.
+
+\subsection{Writing a Bibliography Environment}
+The bibliography section is to be documented in the same environment which can be created by using:
+\\ \begin{verbatim} \textbackslash begin\{thebibliography\} \end{verbatim}
+\\ \begin{verbatim} \textbackslash end\{thebibliography\} \end{verbatim}. 
+\\ Within this environment you can create bibliography entries with the command \textbackslash bibitem\{name\}
+
+\section{Conclusion}
+Through this document, made with the purpose of documenting the implementation of Latex, I hope to have covered nuggets of information on this topic. Latex is a great tool to document any research paper, or formal paper like a science journal or thesis and offers great value for employers, academic scholars to view your work. There are various references you might refer to given in the reference section. Note that this document was formatted in the IEEE standard formatting method. Feel free to explore other options which I could not cover in this tutorial. 
+
+\section*{Acknowledgements}
+I would like to acknowledge to Professor Gerald Moulds for providing this template document and other Overleaf sources for guiding this tutorial with information from their behalf.
+%----- APPENDICES --------------------------------------------------------------------------------
+
+
+% you can choose not to have a title for an appendix
+% if you want by leaving the argument blank
+
+
+
+%----- ACKNOWLEDGEMENT SECTION -------------------------------------------------------------------
+% Explain what the asterisk * does in the next line: 
+
+
+
+%----- BIBLIOGRAPHY ------------------------------------------------------------------------------
+
+% You will need to explain how to include the bibliography section as follows. Explain the environment and how to add new items.
+% Including how \ref, \cite and \label should be included here.
+
+% Reminder: you will need to explain how to include the Bibliography Section and then include your own Bibliography at the end of your own tutorial.
+
+\begin{thebibliography}{1}
+
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to {\LaTeX}}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+  
+\bibitem{Sections}
+“Sections and Chapters.” \emph{Overleaf, Online LaTeX Editor}, https://www.overleaf.com/learn/latex/Sections\_and\_chapters. 
+
+\bibitem{Math}
+“Mathematical Expressions.” \emph{Overleaf, Online LaTeX Editor}, https://www.overleaf.com/learn/latex/Mathematical\_expressions. 
+
+\bibitem{}
+“Environments.” \emph{Overleaf, Online LaTeX Editor}, https://www.overleaf.com/learn/latex/Environments. 
+\end{thebibliography}
+
+%----- Optional: BIOGRAPHY Section ---------------------------------------------------------------
+ 
+% If you have an EPS/PDF photo (graphicx package needed) extra braces are
+% needed around the contents of the optional argument to biography to prevent
+% the LaTeX parser from getting confused when it sees the complicated
+% \includegraphics command within an optional argument. (You could create
+% your own custom macro containing the \includegraphics command to make things
+% simpler here.)
+%\begin{biography}[{\includegraphics[width=1in,height=1.25in,clip,keepaspectratio]{mshell}}]{Gerald Moulds}
+% or if you just want to reserve a space for a photo:
+
+
+% if you will not have a photo at all:
+
+% insert where needed to balance the two columns on the last page with
+% biographies
+%\newpage
+
+% You can push biographies down or up by placing
+% a \vfill before or after them. The appropriate
+% use of \vfill depends on what kind of text is
+% on the last page and whether or not the columns
+% are being equalized.
+
+%\vfill
+
+% Can be used to pull up biographies so that the bottom of the last one
+% is flush with the other column.
+%\enlargethispage{-5in}
+
+\end{document}

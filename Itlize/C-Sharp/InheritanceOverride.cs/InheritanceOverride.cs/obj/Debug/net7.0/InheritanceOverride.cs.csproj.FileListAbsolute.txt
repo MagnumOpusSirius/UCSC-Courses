@@ -1,0 +1,15 @@
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/bin/Debug/net7.0/InheritanceOverride.cs
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/bin/Debug/net7.0/InheritanceOverride.cs.deps.json
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/bin/Debug/net7.0/InheritanceOverride.cs.runtimeconfig.json
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/bin/Debug/net7.0/InheritanceOverride.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/bin/Debug/net7.0/InheritanceOverride.cs.pdb
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.csproj.AssemblyReference.cache
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.AssemblyInfoInputs.cache
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.AssemblyInfo.cs
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.csproj.CoreCompileInputs.cache
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/refint/InheritanceOverride.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.pdb
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/InheritanceOverride.cs.genruntimeconfig.cache
+/Users/parth/Desktop/Itlize/C-Sharp/InheritanceOverride.cs/InheritanceOverride.cs/obj/Debug/net7.0/ref/InheritanceOverride.cs.dll

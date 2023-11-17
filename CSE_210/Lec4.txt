@@ -1,0 +1,5 @@
+Notes:
+
+-> Curly braces to declare stuff implicitly
+
+

@@ -1,0 +1,177 @@
+//primitive data type 
+
+let num1 = 42;
+let num2 = num1; 
+
+num1 = 50; 
+
+console.log(num1); // output:50 
+console.log(num2); // output:42 
+
+//reference data type 
+
+let obj1 ={name:"John"};
+let obj2 = obj1; 
+obj1.name = "Peter"; 
+
+console.log(obj1.name);
+console.log(obj2.name); 
+
+//Null 
+
+let x = null; 
+console.log(x);
+
+//Undefined 
+
+let y; 
+console.log(y); 
+
+
+//Equality 
+// ==: value be the same 
+// ===; value datatype to be the same 
+
+
+const var1 ="5"; 
+const var2 = 5; 
+
+console.log(var1==var2); 
+console.log(var1 === var2); 
+
+const var3 =""; 
+const var4 =0; 
+
+console.log(var3==var4);
+console.log(var3===var4);
+
+// 0 =='0'  : true 
+// false == 'false' : false
+// false == '0' : :true
+// false == '' :true 
+// null == undefined : true
+// '1' == true : true 
+// NaN == NaN : false 
+
+// The unary negation operator (-)
+// convert a positive number to a negative number, or vice versa, by changing the sigh 
+// convert a non-number into a number 
+
+const x = '4'; 
+const y = -x; 
+
+console.log(y); 
+
+//The unary plus operator(+) 
+// ensure that a value is treated as number, regardless of its orignial type. 
+
+const x = 1; 
+const y = -1; 
+
+console.log(+'hello'); 
+
+//Function 
+
+function addNumbers(num1, num2){
+    return num1+num2; 
+}
+
+var result = addNumbers(3,3); 
+console.log(result); 
+
+//if ease if 
+
+function checkGrade(score){
+    if(score>=90){
+        console.log("excellent");
+    }else if (score>=70){
+        console.log("good"); 
+    }else if (score>=50){
+        console.log('pass')
+    }else {
+        console.log('Fail')
+    }
+
+}
+
+checkGrade(85);
+checkGrade(95);
+checkGrade(55);
+checkGrade(40);
+
+//Switch 
+
+function checkNumberType(number){
+
+    switch(number){
+        case 1:
+        case 1: 
+            console.log('the number is 1.');
+            break;
+        default: 
+            console.log('the number is either 1, or 2.')
+
+    }
+
+}
+
+checkNumberType(1);
+checkNumberType(2);
+checkNumberType(0);
+
+//for loop 
+
+for(var i =0; i<5;i++){
+
+    console.log(i);
+}
+
+//for in loop 
+
+const person = {Fname:"John", Lname:"Peter", age:27}; 
+
+let text=""; 
+for(let x in person){
+    text = person[x]; 
+    console.log(text);
+}
+
+//while loop 
+
+var count = 0; 
+
+while(count<5){
+    console.log(count);
+    count++; 
+}
+
+//do while 
+var count = 5; 
+
+do{
+    console.log(count);
+    count++; 
+}while (count<5); 
+
+//object.keys()
+
+function Person(name){
+    this.name = name; 
+}
+
+Person.prototype.age = 30; 
+
+var john = new Person ('John'); 
+
+for (var prop in john){
+    console.log(prop); 
+}
+
+var keys = Object.keys(john); 
+console.log(keys); 
+
+//arrow function 
+const functionName = (paramaters) =>{
+    //function body 
+    return returnValues; 
+}

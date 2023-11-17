@@ -1,0 +1,15 @@
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/bin/Debug/net7.0/CollectionDemoConApp.cs
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/bin/Debug/net7.0/CollectionDemoConApp.cs.deps.json
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/bin/Debug/net7.0/CollectionDemoConApp.cs.runtimeconfig.json
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/bin/Debug/net7.0/CollectionDemoConApp.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/bin/Debug/net7.0/CollectionDemoConApp.cs.pdb
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.csproj.AssemblyReference.cache
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.GeneratedMSBuildEditorConfig.editorconfig
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.AssemblyInfoInputs.cache
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.AssemblyInfo.cs
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.csproj.CoreCompileInputs.cache
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/refint/CollectionDemoConApp.cs.dll
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.pdb
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/CollectionDemoConApp.cs.genruntimeconfig.cache
+/Users/parth/Desktop/Itlize/C-Sharp/CollectionDemoConApp.cs/CollectionDemoConApp.cs/obj/Debug/net7.0/ref/CollectionDemoConApp.cs.dll

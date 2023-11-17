@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication and Division Calculator</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      margin-top: 100px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    input {
+      padding: 5px;
+      width: 200px;
+      margin: 10px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    p {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Multiplication and Division Calculator</h1>
+    <input type="text" id="number1" placeholder="Enter the first number">
+    <br>
+    <input type="text" id="number2" placeholder="Enter the second number">
+    <br>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <p id="result"></p>
+  </div>
+  
+  <script>
+    function multiply() {
+      // Get the input values
+      const number1 = parseFloat(document.getElementById('number1').value);
+      const number2 = parseFloat(document.getElementById('number2').value);
+      
+      // Calculate the multiplication
+      const multiplication = number1 * number2;
+      
+      // Display the result
+      document.getElementById('result').innerHTML = 'Result: ' + multiplication;
+    }
+    
+    function divide() {
+      // Get the input values
+      const number1 = parseFloat(document.getElementById('number1').value);
+      const number2 = parseFloat(document.getElementById('number2').value);
+      
+      // Calculate the division
+      const division = number1 / number2;
+      
+      // Display the result
+      document.getElementById('result').innerHTML = 'Result: ' + division;
+    }
+  </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website URL Example</title>
+  <script>
+    // Get the website URL 
+    window.onload = function() {
+      const websiteUrl = window.location.href;
+      document.getElementById('url').textContent = 'Website URL: ' + websiteUrl;
+    };
+  </script>
+</head>
+<body>
+  <h1>Website URL Example</h1>
+  <p id="url"></p>
+</body>
+</html>
